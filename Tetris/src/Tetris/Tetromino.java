@@ -70,11 +70,9 @@ class Tetromino implements Serializable {
             case 5:
                 return new Z();
             case 6:
-                return new S();// 可以通过增加相应形状来改变出现频率
+                return new S();
             case 7:
                 return new Q();
-//            case 8:
-//                return new X();
             default:
                 return null;
         }

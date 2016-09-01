@@ -7,6 +7,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Java SE 8 [1.8.0_91]" jdkType="JavaSDK" />
   </component>
 </module>

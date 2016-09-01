@@ -3,16 +3,10 @@ package Tetris;
 import java.awt.*;
 import java.io.Serializable;
 
-/**
- * 这代表一个方格的类，方格有坐标，其上的贴图属性，及向左，向右，向下移动属性
- */
 class Cell implements Serializable {
-    /**
-     *
-     */
     private static final long serialVersionUID = 2L;
-    private int row; //相当于方格x坐标
-    private int col; //相当于方格y坐标
+    private int row;
+    private int col;
     private Image image;
 
     Cell(int row, int col, Image image) {
@@ -69,6 +63,4 @@ class Cell implements Serializable {
     void setCol(int col) {
         this.col = col;
     }
-
-
 }

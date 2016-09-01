@@ -171,31 +171,31 @@ public class Tetris extends JPanel {
                 speed1 = 1;
 
         }
-//        if (isUsedSA) {
-//            if (pause) {
-//                periodTime += time;
-//                isFirstDraw = true;// }
-//                str = "消行:" + this.lines + " 速度:" + speed1 + " 时间:"
-//                        + (periodTime);
-//                g.drawString(str, x, y);
-//            } else if (isFirstDraw) {
-//                start = System.currentTimeMillis();
-//                time = 0;
-//                str = "消行:" + this.lines + " 速度:" + speed1 + " 时间:"
-//                        + (periodTime + time);
-//                g.drawString(str, x, y);
-//                isFirstDraw = false;
-//            } else {
-//                long end = System.currentTimeMillis();
-//                time = (end - start) / 1000;
-//                str = "消行:" + this.lines + " 速度:" + speed1 + " 时间:"
-//                        + (periodTime + time);
-//                g.drawString(str, x, y);
-//            }
-//        } else {
-//            str = "消行:" + this.lines + " 速度:" + speed1 + " 时间:" + 0;
-//            g.drawString(str, x, y);
-//        }
+        if (isUsedSA) {
+            if (pause) {
+                periodTime += time;
+                isFirstDraw = true;// }
+                str = "消行:" + this.lines + " 速度:" + speed1 + " 时间:"
+                        + (periodTime);
+                g.drawString(str, x, y);
+            } else if (isFirstDraw) {
+                start = System.currentTimeMillis();
+                time = 0;
+                str = "消行:" + this.lines + " 速度:" + speed1 + " 时间:"
+                        + (periodTime + time);
+                g.drawString(str, x, y);
+                isFirstDraw = false;
+            } else {
+                long end = System.currentTimeMillis();
+                time = (end - start) / 1000;
+                str = "消行:" + this.lines + " 速度:" + speed1 + " 时间:"
+                        + (periodTime + time);
+                g.drawString(str, x, y);
+            }
+        } else {
+            str = "消行:" + this.lines + " 速度:" + speed1 + " 时间:" + 0;
+            g.drawString(str, x, y);
+        }
         y += 26;
 //        str = "转换速度所需分数:" + ((this.score / 200 + 1) * 200 - this.score);
 //        g.drawString(str, x, y);
